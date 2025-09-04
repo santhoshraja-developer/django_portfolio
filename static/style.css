@@ -1,69 +1,43 @@
 
+
 display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
-  line-height: 1.2;
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2;
 }
+
 @media (min-width: 1200px) {
-  .display-3 {
-    font-size: 4rem;
-  }
+    .display-3 {
+        font-size: 4rem;
+    }
 }
 
 .textline {
-  font-size: larger;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .text-gradient {
-  background: linear-gradient(45deg, #051aff, #ef10bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+    background: linear-gradient(45deg, #051aff, #ef10bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
-  line-height: 1.2;
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
 }
+
 @media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
+    .display-5 {
+        font-size: 3rem;
+    }
 }
 
-/* #skill .progress {
-    height: 5px;
-    border-radius: 5px;
-}
 
-#skill .progress .progress-bar {
-    width: 0px;
-    border-radius: 5px;
-    transition: 3s;
-}
-
-#skill .nav-pills .nav-link {
-    color: var(--dark);
-}
-
-#skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
-}
-
-#skill .tab-content hr {
-    width: 30px;
-} */
-
-/********** Template CSS **********/
-/* :root {
-    --primary: #6244C5;
-    --secondary: #FFC448;
-    --light: #FAFAFB;
-    --dark: #12141D;
-} */
 
 .back-to-top {
     position: fixed;
@@ -84,19 +58,6 @@ display-3 {
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /*** Button ***/
@@ -223,7 +184,7 @@ display-3 {
 
 /*** Skills ***/
 #skill .progress {
-    height: 5px;
+    height: 5px; 
     border-radius: 5px;
 }
 
@@ -231,6 +192,7 @@ display-3 {
     width: 0px;
     border-radius: 5px;
     transition: 3s;
+    
 }
 
 #skill .nav-pills .nav-link {
@@ -238,7 +200,7 @@ display-3 {
 }
 
 #skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
+    color: #f8efef;
 }
 
 #skill .tab-content hr {
@@ -248,7 +210,47 @@ display-3 {
 
 
 
-/*** Project Portfolio ***/
+
+
+
+
+
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures text is hidden until revealed */
+    border-right: .15em solid orange;
+    /* Cursor effect */
+    white-space: nowrap;
+    /* Keeps text in one line */
+    letter-spacing: .15em;
+    /* Optional spacing */
+    animation: typing 3s steps(25, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
@@ -274,7 +276,7 @@ display-3 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(118, 156, 239, 0.9);
+    background: rgba(28, 220, 254, 0.9);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -289,119 +291,25 @@ display-3 {
     padding-bottom: 30px !important;
 }
 
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 14px;
+body {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-
-.testimonial-left,
-.testimonial-right {
-    position: relative;
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
 }
 
-.testimonial-left img,
-.testimonial-right img {
-    position: absolute;
-    padding: 5px;
-    border: 1px solid var(--secondary);
-    border-radius: 70px;
+/* Navbar */
+.navbar.dark-mode {
+  background-color: #1e1e1e !important;
 }
 
-.testimonial-left img:nth-child(1),
-.testimonial-right img:nth-child(3) {
-    width: 70px;
-    height: 70px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+/* Cards, sections, modals */
+.card.dark-mode, 
+.modal-content.dark-mode {
+  background-color: #1c1c1c;
+  color: #f8f9fa;
 }
-
-.testimonial-left img:nth-child(2),
-.testimonial-right img:nth-child(2) {
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-}
-
-.testimonial-left img:nth-child(3),
-.testimonial-right img:nth-child(1) {
-    width: 50px;
-    height: 50px;
-    bottom: 10%;
-    right: 10%;
-}
-
-.testimonial-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
-}
-
-.testimonial-carousel .testimonial-icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    border: 1px solid var(--secondary);
-    border-radius: 60px;
-}
-
-.testimonial-carousel .owl-dots {
-    height: 40px;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 2px solid var(--secondary);
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 5px;
-    left: 5px;
-    border-radius: 16px;
-    background: var(--secondary);
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active::after {
-    background: var(--primary);
-}
-
-        
-
-
-
-
-
-
-
-
-
-
