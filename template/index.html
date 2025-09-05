@@ -13,16 +13,17 @@
         <div class="text-center text-xxl-start">
           <div class=" bg-gradient-danger-to-secondary text-white mb-4">
           </div>
-          <div data-aos="fade-down" data-aos-delay="400" class="fs-3 fw-light  text-muted">Full stack web developer
+          <div data-aos="fade-down" data-aos-delay="200" class="fs-3 fw-light  text-muted">Full stack web developer
           </div>
-          <h1 data-aos="fade-up" data-aos-delay="400" class="display-3 fw-bolder mb-5"><span
+          <h1 data-aos="fade-up" data-aos-delay="200" class="display-3 fw-bolder mb-5"><span
               class="text-gradient d-inline">SANTHOSH KUMAR R</span></h1>
-          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+          <div data-aos="fade-down"
+            class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
             <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
               href="{% static 'files\Santhoshkumar Resume.pdf' %}">Resume</a>
           </div> <br>
-          <div class=" d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-            <h5 class=" typewriter text-white textline fw-light text-muted ">Crafting seamless digital experiences from
+          <div data-aos="flip-up" class=" d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+            <h5 class=" typewriter text-white textline  text-muted text-center text-sm-start ">Crafting seamless digital experiences from
               pixel to database</h5>
           </div>
         </div>
@@ -39,7 +40,9 @@
 </header>
 
 
-<section id="about" class=" py-5">
+
+
+<section id="about" class=" ">
   <div class="container px-5">
     <div class="row gx-5 justify-content-center">
       <div class="col-xxl-8">
@@ -47,10 +50,10 @@
           <h2 data-aos="fade-up" class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span> </h2>
           <br>
           <div class="position-relative mb-5">
-            <img data-aos="fade-up" class="img-fluid rounded-circle border border-secondary p-4 mx-auto w-50"
-              src="{% static 'images\20250209_164317.jpg' %}" alt="">
+            <img data-aos="zoom-out" class="img-fluid rounded-circle border border-secondary p-4 mx-auto w-25"
+              src="{% static 'images\Clipped_image_20240223_174652 (2).png' %}" alt="">
             <div class="testimonial-icon">
-              <i class="fa fa-quote-left text-primary"></i>
+              <i class=" text-primary"></i>
             </div>
           </div>
           <p data-aos="fade-up" class="lead fw-light mb-4">My self i'm
@@ -90,7 +93,7 @@
 
 
 
-<div class="container-xxl py-6 pb-5" id="skills">
+<div class="container-xxl  pb-5" id="skills">
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-6">
@@ -164,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 ">
+      <div data-aos="zoom-in-right" class="col-lg-6 ">
         <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
 
           <li class="nav-item w-50">
@@ -233,7 +236,7 @@
                 class="fa fa-eye"></i></a>
             <button type="button" class="btn btn-outline-secondary btn btn-lg-square" data-bs-toggle="modal"
               data-bs-target="#project1Modal1">
-              <i class="fa fa-link"></i> 
+              <i class="fa fa-link"></i>
             </button>
           </div>
         </div>
@@ -267,7 +270,7 @@
       </div>
 
       <div class="modal-footer">
-        
+
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
 
@@ -278,7 +281,7 @@
 <!-- project model 2 portfolio -->
 
 <div class="modal fade" id="project1Modal1" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg"> 
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       <div class="modal-header">
@@ -287,7 +290,8 @@
       </div>
 
       <div class="modal-body">
-        <p><strong>Description:</strong> A personal portfolio website to showcase my projects, resume, and skills. It includes smooth scrolling navigation, animated progress bars, and responsive design.</p>
+        <p><strong>Description:</strong> A personal portfolio website to showcase my projects, resume, and skills. It
+          includes smooth scrolling navigation, animated progress bars, and responsive design.</p>
         <p><strong>Tech Stack:</strong> Django, Bootstrap,CSS,HTML</p>
         <p><strong>Features:</strong></p>
         <ul>

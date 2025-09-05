@@ -29,3 +29,4 @@ def contact(request):
 
 def project(request):
     return render(request,"project.html")
+
